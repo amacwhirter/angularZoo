@@ -1,3 +1,107 @@
-<p>
-  new-dino works!
-</p>
+<div class="container">
+  <h3>Add A New Dinosaur</h3>
+  <form #f="ngForm" (ngSubmit)="submit(f)">
+    <div ngModelGroup="dinoName" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="dinoName">Dinosaur Name</label>
+        <input
+          required
+          minlength="3"
+          ngModel
+          name="dinoName"
+          #dinoName="ngModel"
+          id="dinoName"
+          type="text"
+          class="form-control">
+      </div>
+    </div>
+    <div ngModelGroup="dinoHeight" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="dinoHeight">Average Height</label>
+        <input
+          required
+          ngModel
+          name="dinoHeight"
+          #dinoName="ngModel"
+          id="dinoHeight"
+          type="number"
+          class="form-control">
+      </div>
+    </div>
+    <div ngModelGroup="dinoWeight" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="dinoWeight">Average Weight</label>
+        <input
+          required
+          ngModel
+          name="dinoWeight"
+          #dinoName="ngModel"
+          id="dinoWeight"
+          type="number"
+          class="form-control">
+      </div>
+    </div>
+    <div ngModelGroup="kingdom" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="kingdom">
+      Class of Animal Kingdom
+    </label>
+        <select
+          required
+          ngModel
+          name="kingdom"
+          id="kingdom-method"
+          class="form-control">
+      <option *ngFor="let kingdom of kingdom" [value]="kingdom.id">
+        {{ kingdom.name }}
+      </option>
+    </select>
+      </div>
+    </div>
+    <div ngModelGroup="dinoDescription" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="dinoDescription">Description</label>
+        <textarea
+          required
+          ngModel
+          name="dinoDescription"
+          id="comment"
+          cols="30"
+          rows="5"
+          class="form-control">
+    </textarea>
+      </div>
+    </div>
+    <div ngModelGroup="dinoImage" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="dinoImage">Add Dinosaur Photo Link</label>
+        <input
+          required
+          ngModel
+          name="dinoImage"
+          #dinoName="ngModel"
+          id="dinoImage"
+          type="text"
+          class="form-control">
+      </div>
+    </div>
+    <div ngModelGroup="dinoQuantity" #dino="ngModelGroup">
+      <div class="form-group">
+        <label for="dinoQuantity">Zoo Quantity</label>
+        <input
+          required
+          ngModel
+          name="dinoQuantity"
+          #dinoName="ngModel"
+          id="dinoQuantity"
+          type="number"
+          class="form-control">
+      </div>
+    </div>
+    <p>
+      {{ f.value | json }}
+    </p>
+    <button (click)="back()" class="btn btn-danger">Back Home</button>
+    <button class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+  </form>
+</div>
