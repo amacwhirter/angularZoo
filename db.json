@@ -1,0 +1,113 @@
+{
+  "dinosaurs": [
+    {
+      "id": 0,
+      "name": "Tyrannosaurus",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "http://www.kids-dinosaurs.com/images/xdinosaur-t-rex.jpg.pagespeed.ic.TjSteIozIr.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 1,
+      "name": "Majungasaurus",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/259_majungasaurus_hyperactive_grasshopper.png",
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "name": "Sauroposeidon",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/253_sauroposeidon_alexander.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 3,
+      "name": "Edmontosaurus",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/248_edmontosaurus_martin_garratt.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 4,
+      "name": "Deinocheirus",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/241_deinocheirus_andreas.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 5,
+      "name": "Gastonia",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/234_gastonia.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 6,
+      "name": "Dilong",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/549_dilong_alex_lovegrove.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 7,
+      "name": "Sinraptor",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/539_sinraptor_frank_lode.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 8,
+      "name": "Guanlong",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/535_guanlong_frank_lode.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 9,
+      "name": "Pentaceratops",
+      "weight": 15000,
+      "height": 40,
+      "kingdom": "Animilia",
+      "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/491_pentaceratops_steve_white.jpg",
+      "quantity": 3
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    }
+  ]
+}

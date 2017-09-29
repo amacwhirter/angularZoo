@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { EditInventoryService } from '../services/edit-inventory.service';
+import { DataService } from '../services/data.service';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/combineLatest';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'new-dino',
@@ -7,10 +12,12 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./new-dino.component.css']
 })
 export class NewDinoComponent {
+  dinosaurs: any[];
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    private service: EditInventoryService) { }
 
   kingdom = [
     { id: 0, name: 'N/A' },
@@ -18,10 +25,19 @@ export class NewDinoComponent {
     { id: 2, name: 'Ornithischia' },
   ];
 
-  submit(f){
-    this.router.navigate(['/edit']);
-    console.log(f.value);
+  createDinosaur(f) {
+    let newdinosaur = (f.value)
+    this.service.create(newdinosaur)
+      .subscribe(dinosaurs => this.dinosaurs = dinosaurs);
+
+      this.router.navigate(['/edit']);
+      console.log("this is value", f.value);
   }
+
+  // submit(f){
+  //   this.router.navigate(['/edit']);
+  //   console.log("this is value", f.value);
+  // }
 
   back(){
     this.router.navigate(['/']);

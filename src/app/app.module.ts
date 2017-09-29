@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
+
+import { EditInventoryService } from './services/edit-inventory.service';
+import { DataService } from './services/data.service';
 
 import { AppComponent } from './app.component';
 import { NewDinoComponent } from './new-dino/new-dino.component';
@@ -23,6 +27,7 @@ import { EditInventoryComponent } from './edit-inventory/edit-inventory.componen
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -46,7 +51,12 @@ import { EditInventoryComponent } from './edit-inventory/edit-inventory.componen
       }
     ])
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    EditInventoryService,
+    DataService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

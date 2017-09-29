@@ -1,3 +1,21 @@
-<p>
-  edit-inventory works!
-</p>
+<h1>Current Dinosaurs</h1>
+<button (click)="back()" class="btn btn-danger">Back Home</button>
+<button (click)="add()" class="btn btn-primary">Add New</button>
+<hr>
+<div *ngFor="let dinosaur of dinosaurs">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img class="dinosaurImg media-object" src="{{ dinosaur.image }}" alt="...">
+        <div class="caption">
+          <h2>{{ dinosaur.name }}</h2>
+          <h5>Average Height: {{ dinosaur.height }}</h5>
+          <h5>Average Weight: {{ dinosaur.weight }}</h5>
+          <h5>Animal Kingdom Class: {{ dinosaur.kingdom }}</h5>
+          <h5>Description: {{ dinosaur.description }}</h5>
+          <h5>Quantity: {{ dinosaur.quantity }}</h5>
+          <hr>
+          <p><a href="#" class="btn btn-primary" role="button">Edit</a></p>
+      </div>
+    </div>
+  </div>
+</div>
