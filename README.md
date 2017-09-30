@@ -1,5 +1,13 @@
 # AngularZoo
 
+To Run:
+
+npm start
+
+this runs "ng serve & json-server --watch db.json" for application and mock api.
+
+# AngularZoo
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
 ## Development server
