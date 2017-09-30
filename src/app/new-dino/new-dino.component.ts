@@ -11,6 +11,7 @@ import 'rxjs/add/operator/map';
   templateUrl: './new-dino.component.html',
   styleUrls: ['./new-dino.component.css']
 })
+
 export class NewDinoComponent {
   dinosaurs: any[];
 
@@ -25,19 +26,24 @@ export class NewDinoComponent {
     { id: 2, name: 'Ornithischia' },
   ];
 
-  createDinosaur(f) {
-    let newdinosaur = (f.value)
-    this.service.create(newdinosaur)
-      .subscribe(dinosaurs => this.dinosaurs = dinosaurs);
+  log(x) { console.log(x); }
 
-      this.router.navigate(['/edit']);
-      console.log("this is value", f.value);
+  createDinosaur(dinosaur) {
+    let newDinosaur = (dinosaur);
+    console.log("checking dino", newDinosaur);
+
+    this.service.create(newDinosaur)
+    .subscribe(data => {
+      console.log("checking data", data);
+      }, err => {
+       console.log("check if any err");
+      })
   }
 
-  // submit(f){
-  //   this.router.navigate(['/edit']);
-  //   console.log("this is value", f.value);
-  // }
+  submit(f){
+    this.router.navigate(['/edit']);
+    console.log("this is value", f.value);
+  }
 
   back(){
     this.router.navigate(['/']);

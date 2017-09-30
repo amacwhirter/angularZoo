@@ -17,7 +17,7 @@ export class HomeComponent {
   }
 
   inventory() {
-    this.router.navigate(['/inventory']);
+    this.router.navigate(['/edit']);
   }
 
 }

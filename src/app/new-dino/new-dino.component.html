@@ -1,15 +1,15 @@
 <div class="container">
   <h3>Add A New Dinosaur</h3>
-  <form #f="ngForm" (ngSubmit)="createDinosaur(f)">
-    <div ngModelGroup="dinosaurs" #dinosaurs="ngModelGroup">
+  <form #f="ngForm" (ngSubmit)="submit(f)">
       <div class="form-group">
         <label for="name">Dinosaur Name</label>
         <input
           required
           minlength="3"
-          ngModel
-          name="name"
+          ngModel name="name"
+          #name="ngModel"
           id="name"
+          (change)="log(name.value)"
           type="text"
           class="form-control">
       </div>
@@ -17,9 +17,10 @@
         <label for="dinoHeight">Average Height</label>
         <input
           required
-          ngModel
-          name="height"
+          ngModel name="height"
+          #height="ngModel"
           id="height"
+          (change)="log(height.value)"
           type="number"
           class="form-control">
       </div>
@@ -27,9 +28,10 @@
         <label for="weight">Average Weight</label>
         <input
           required
-          ngModel
-          name="weight"
+          ngModel name="weight"
+          #weight="ngModel"
           id="weight"
+          (change)="log(weight.value)"
           type="number"
           class="form-control">
       </div>
@@ -39,9 +41,9 @@
         </label>
         <select
           required
-          ngModel
-          name="kingdom"
+          ngModel name="kingdom"
           id="kingdom-method"
+          (change)="log(kingdom.id)"
           class="form-control">
       <option *ngFor="let kingdom of kingdom" [value]="kingdom.id">
         {{ kingdom.name }}
@@ -52,9 +54,10 @@
         <label for="description">Description</label>
         <textarea
           required
-          ngModel
-          name="description"
+          ngModel name="description"
+          #description="ngModel"
           id="comment"
+          (change)="log(description.value)"
           cols="30"
           rows="5"
           class="form-control">
@@ -64,9 +67,10 @@
         <label for="image">Add Dinosaur Photo Link</label>
         <input
           required
-          ngModel
-          name="image"
+          ngModel name="image"
+          #image="ngModel"
           id="image"
+          (change)="log(image.value)"
           type="text"
           class="form-control">
       </div>
@@ -74,17 +78,17 @@
         <label for="quantity">Zoo Quantity</label>
         <input
           required
-          ngModel
-          name="quantity"
+          ngModel name="quantity"
+          #quantity="ngModel"
           id="quantity"
+          (change)="log(quantity.value)"
           type="number"
           class="form-control">
       </div>
-    </div>
     <p>
       {{ f.value | json }}
     </p>
     <button (click)="back()" class="btn btn-danger">Back Home</button>
-    <button class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+    <button (click)="createDinosaur(dinosaur)" #dinosaur type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
   </form>
 </div>
