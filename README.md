@@ -2,6 +2,8 @@
 
 To Run:
 
+npm i
+
 npm start
 
 this runs "ng serve & json-server --watch db.json" for application and mock api.
