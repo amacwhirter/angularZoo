@@ -24,7 +24,6 @@ export class DataService {
   }
 
   update(resource){
-    console.log("update pass", resource)
     return this.http.put(this.url + '/' + resource.id, resource)
     .subscribe(response => {
       console.log("updating", response.json())

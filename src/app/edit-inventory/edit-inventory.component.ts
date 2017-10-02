@@ -33,7 +33,6 @@ export class EditInventoryComponent implements OnInit {
 
     updateDinosaur(dinosaur) {
       this.service.update(dinosaur)
-      console.log(dinosaur)
     }
 
 }
