@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { EditInventoryComponent } from './edit-inventory/edit-inventory.component';
+import { SearchPipe } from './common/search.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EditInventoryComponent } from './edit-inventory/edit-inventory.componen
     HomeComponent,
     NotFoundComponent,
     InventoryComponent,
-    EditInventoryComponent
+    EditInventoryComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
