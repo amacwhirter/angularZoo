@@ -37,7 +37,7 @@ export class NewDinoComponent{
     let dino: any = {
       name: this.name,
       quantity: this.quantity,
-      kingdom: 1,
+      kingdom: "Saurischia",
       image: this.image,
       description: this.description,
       weight: this.weight,

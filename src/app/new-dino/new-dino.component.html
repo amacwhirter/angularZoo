@@ -11,6 +11,7 @@
           [(ngModel)] = "name"
           id="name"
           type="text"
+          placeholder="Enter dinosaur name"
           class="form-control">
       </div>
       <div class="form-group">
@@ -21,6 +22,7 @@
           [(ngModel)] = "height"
           id="height"
           type="number"
+          placeholder="Enter height in feet"
           class="form-control">
       </div>
       <div class="form-group">
@@ -31,6 +33,7 @@
           [(ngModel)] = "weight"
           id="weight"
           type="number"
+          placeholder="Enter weight in pounds"
           class="form-control">
       </div>
       <div class="form-group">
@@ -56,6 +59,7 @@
           id="comment"
           cols="30"
           rows="5"
+          placeholder="Enter brief description"
           class="form-control">
     </textarea>
       </div>
@@ -67,6 +71,7 @@
           name="image"
           id="image"
           type="text"
+          placeholder="Enter image url"
           class="form-control">
       </div>
       <div class="form-group">
@@ -77,11 +82,12 @@
           name = "quantity"
           id="quantity"
           type="number"
+          placeholder="Enter quantity found in zoo"
           class="form-control">
       </div>
     </div>
     <p>
-      {{ f.value | json }}
+      <!-- {{ f.value | json }} -->
     </p>
     <button (click)="back()" class="btn btn-danger">Back Home</button>
     <button (click)="createDinosaur(createDino)" type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>

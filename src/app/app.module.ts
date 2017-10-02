@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { EditInventoryComponent } from './edit-inventory/edit-inventory.component';
 import { SearchPipe } from './common/search.pipe';
+import { OrderbyPipe } from './common/orderby.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SearchPipe } from './common/search.pipe';
     NotFoundComponent,
     InventoryComponent,
     EditInventoryComponent,
-    SearchPipe
+    SearchPipe,
+    OrderbyPipe
   ],
   imports: [
     BrowserModule,

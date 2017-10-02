@@ -1,6 +1,7 @@
 <h1>Current Dinosaur Catalog</h1>
 <button (click)="back()" class="btn btn-danger">Back Home</button>
 <button (click)="add()" class="btn btn-primary">Add New</button>
+<button (click)="inventory()" class="btn btn-success">See Inventory List</button>
 <hr>
 <div *ngFor="let dinosaur of dinosaurs">
     <div class="col-md-4">
@@ -8,8 +9,8 @@
         <img class="dinosaurImg media-object" src="{{ dinosaur.image }}" alt="...">
         <div class="caption">
           <h2>{{ dinosaur.name }}</h2>
-          <h5>Average Height: {{ dinosaur.height }}</h5>
-          <h5>Average Weight: {{ dinosaur.weight }}</h5>
+          <h5>Average Height: {{ dinosaur.height }} ft</h5>
+          <h5>Average Weight: {{ dinosaur.weight }} lbs</h5>
           <h5>Animal Kingdom Class: {{ dinosaur.kingdom }}</h5>
           <h5>Description: {{ dinosaur.description }}</h5>
           <h5>Quantity:<h5 *ngIf="!isEdit">{{ dinosaur.quantity }}</h5></h5>

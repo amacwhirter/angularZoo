@@ -31,6 +31,10 @@ export class EditInventoryComponent implements OnInit {
       this.router.navigate(['/add']);
     }
 
+    inventory(){
+      this.router.navigate(['/inventory']);
+    }
+
     updateDinosaur(dinosaur) {
       this.service.update(dinosaur)
     }
