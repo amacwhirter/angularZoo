@@ -16,8 +16,11 @@ export class DataService {
   }
 
   create(resource){
-    return this.http.post(this.url, JSON.stringify(resource))
-      .map(response => response.json())
+    console.log("data service", resource);
+    return this.http.post(this.url, resource)
+      .subscribe(response => {
+        console.log(response.json())
+      })
   }
 
   update(resource){

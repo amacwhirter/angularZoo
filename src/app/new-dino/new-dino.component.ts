@@ -12,32 +12,39 @@ import 'rxjs/add/operator/map';
   styleUrls: ['./new-dino.component.css']
 })
 
-export class NewDinoComponent {
-  dinosaurs: any[];
+export class NewDinoComponent{
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private service: EditInventoryService) { }
 
+  image : string;
+  quantity: number;
+  description: string;
+  weight: number;
+  height: number;
+  name: string;
   kingdom = [
     { id: 0, name: 'N/A' },
     { id: 1, name: 'Saurischia' },
     { id: 2, name: 'Ornithischia' },
   ];
+  dinos: any[];
 
-  log(x) { console.log(x); }
+  createDinosaur(event) {
 
-  createDinosaur(dinosaur) {
-    let newDinosaur = (dinosaur);
-    console.log("checking dino", newDinosaur);
+    let dino: any = {
+      name: this.name,
+      quantity: this.quantity,
+      kingdom: 1,
+      image: this.image,
+      description: this.description,
+      weight: this.weight,
+      height: this.height
+    };
 
-    this.service.create(newDinosaur)
-    .subscribe(data => {
-      console.log("checking data", data);
-      }, err => {
-       console.log("check if any err");
-      })
+    this.service.create(dino)
   }
 
   submit(f){

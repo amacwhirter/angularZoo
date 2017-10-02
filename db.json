@@ -99,6 +99,36 @@
       "description": "Tyrannosaurus Rex means Tyrant Lizard and were one of the biggest meat eaters.",
       "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/491_pentaceratops_steve_white.jpg",
       "quantity": 3
+    },
+    {
+      "name": "Mufutau Holloway",
+      "quantity": 593,
+      "kingdom": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5NuCXK5z_xDKHeEhSfN22WzXHCVGzpwWts_sU4Jj4LjrLpOZEQ",
+      "description": "Non est in vero a adipisicing autem aut repudiandae dolore duis et praesentium sit",
+      "weight": 77,
+      "height": 48,
+      "id": 10
+    },
+    {
+      "name": "Risa Pratt",
+      "quantity": 970,
+      "kingdom": 1,
+      "image": "http://i.ebayimg.com/00/s/MjU3WDMwMA==/z/AH0AAOSwEK9UA8uy/$_35.JPG?set_id=2",
+      "description": "Aliquam deserunt et laudantium distinctio Dolores",
+      "weight": 67,
+      "height": 89,
+      "id": 11
+    },
+    {
+      "name": "Theodore Cabrera",
+      "quantity": 475,
+      "kingdom": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8gsDFUM68_v6IaXhfjpiVlyZQEMGlnleKj3Mrx0Hae4fKjUw",
+      "description": "Voluptas dolor illo irure qui esse esse officia nemo voluptatem ullam amet in facilis labore sit adipisci incidunt labore libero",
+      "weight": 96,
+      "height": 1,
+      "id": 12
     }
   ]
 }
