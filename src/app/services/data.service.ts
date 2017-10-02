@@ -19,13 +19,16 @@ export class DataService {
     console.log("data service", resource);
     return this.http.post(this.url, resource)
       .subscribe(response => {
-        console.log(response.json())
+        console.log("posting", response.json())
       })
   }
 
   update(resource){
-    return this.http.put(this.url + '/' + resource.id, JSON.stringify(resource))
-      .map(response => response.json())
+    console.log("update pass", resource)
+    return this.http.put(this.url + '/' + resource.id, resource)
+    .subscribe(response => {
+      console.log("updating", response.json())
+    })
   }
 
   delete(id){

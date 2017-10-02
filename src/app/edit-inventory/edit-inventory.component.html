@@ -12,9 +12,10 @@
           <h5>Average Weight: {{ dinosaur.weight }}</h5>
           <h5>Animal Kingdom Class: {{ dinosaur.kingdom }}</h5>
           <h5>Description: {{ dinosaur.description }}</h5>
-          <h5>Quantity: {{ dinosaur.quantity }}</h5>
+          <h5>Quantity:<h5 *ngIf="!isEdit">{{ dinosaur.quantity }}</h5></h5>
+          <input *ngIf="isEdit" (keydown.enter)="isEdit=false; updateDinosaur(dinosaur)" type="number" id="this.quantity" [(ngModel)]="dinosaur.quantity">
           <hr>
-          <p><a href="#" class="btn btn-primary" role="button">Edit</a></p>
+          <button class="btn btn-primary" (click)="this.isEdit=true">Edit Quantity</button>
       </div>
     </div>
   </div>
