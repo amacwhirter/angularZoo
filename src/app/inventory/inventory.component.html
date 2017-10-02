@@ -1,3 +1,23 @@
-<p>
-  inventory works!
-</p>
+<h1>Current Dinosaur List Inventory</h1>
+<button (click)="back()" class="btn btn-danger">Back Home</button>
+<button (click)="edit()" class="btn btn-primary">See Catalog</button>
+<button (click)="add()" class="btn btn-success">Add New</button>
+<hr>
+<label for="sort">
+Sort By:
+</label>
+<select name="sort" id="sort-method" class="sort form-control">
+<option *ngFor="let sort of sort" [value]="sort.id">
+  {{ sort.name }}
+</option>
+</select>
+<hr>
+<div *ngFor="let dinosaur of dinosaurs">
+  <h5>{{ dinosaur.name }}</h5>
+  <h5>Average Height: {{ dinosaur.height }}</h5>
+  <h5>Average Weight: {{ dinosaur.weight }}</h5>
+  <h5>Animal Kingdom Class: {{ dinosaur.kingdom }}</h5>
+  <h5>Description: {{ dinosaur.description }}</h5>
+  <h5>Quantity: {{ dinosaur.quantity }}</h5>
+  <hr>
+</div>

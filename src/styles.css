@@ -3,6 +3,7 @@
 
 body {
   padding: 20px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQz0UURo7lb-Dgi1BOJCoGD86H57EO8Eb4LtbI8xWfAQoYeW0olg') no-repeat center center fixed;
 }
 
 .form-control.ng-touched.ng-invalid {

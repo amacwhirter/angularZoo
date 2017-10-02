@@ -16,8 +16,12 @@ export class HomeComponent {
     this.router.navigate(['/add']);
   }
 
-  inventory() {
+  edit() {
     this.router.navigate(['/edit']);
+  }
+
+  inventory() {
+    this.router.navigate(['/inventory']);
   }
 
 }
