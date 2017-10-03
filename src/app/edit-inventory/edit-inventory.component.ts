@@ -36,7 +36,13 @@ export class EditInventoryComponent implements OnInit {
     }
 
     updateDinosaur(dinosaur) {
+      if (dinosaur.quantity === 0){
+        console.log(dinosaur.quantity, dinosaur.id)
+        this.service.delete(dinosaur.id)
+        location.reload()
+      }else{
       this.service.update(dinosaur)
+    }
     }
 
 }

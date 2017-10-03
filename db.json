@@ -112,23 +112,13 @@
     },
     {
       "name": "Risa Pratt",
-      "quantity": 970,
+      "quantity": 971,
       "kingdom": "Saurischia",
       "image": "http://i.ebayimg.com/00/s/MjU3WDMwMA==/z/AH0AAOSwEK9UA8uy/$_35.JPG?set_id=2",
       "description": "Aliquam deserunt et laudantium distinctio Dolores",
       "weight": 67,
       "height": 89,
       "id": 11
-    },
-    {
-      "name": "Theodore Cabrera",
-      "quantity": 872,
-      "kingdom": "Saurischia",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8gsDFUM68_v6IaXhfjpiVlyZQEMGlnleKj3Mrx0Hae4fKjUw",
-      "description": "Voluptas dolor illo irure qui esse esse officia nemo voluptatem ullam amet in facilis labore sit adipisci incidunt labore libero",
-      "weight": 96,
-      "height": 1,
-      "id": 12
     }
   ]
 }

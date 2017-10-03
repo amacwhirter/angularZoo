@@ -25,13 +25,15 @@ export class DataService {
 
   update(resource){
     return this.http.put(this.url + '/' + resource.id, resource)
-    .subscribe(response => {
-      console.log("updating", response.json())
+      .subscribe(response => {
+        console.log("updating", response.json())
     })
   }
 
   delete(id){
     return this.http.delete(this.url + '/' + id)
-      .map(response => response.json())
-  }
+      .subscribe(response => {
+        console.log("deleting", response.json())
+  })
+}
 }
